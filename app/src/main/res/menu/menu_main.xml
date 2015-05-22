@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" android:showAsAction="never"
+        />
+    <item android:id="@+id/Menu1"
+        android:title="@string/m1"
+        android:showAsAction="never"
+        >
+    </item>
+    <item
+        android:id="@+id/Menu2"
+        android:title="@string/m2"
+        >
+    </item>
+    <item
+        android:id="@+id/Menu3"
+        android:title="@string/m3"
+        >
+    </item>
+    <item
+        android:id="@+id/Menu4"
+        android:title="@string/m4"
+        >
+    </item>
+</menu>

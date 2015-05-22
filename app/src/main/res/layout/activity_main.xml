@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="1">
+
+    <Button android:id="@+id/BotonActivar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activar"
+        />
+
+    <TextView android:id="@+id/textPosicionActual"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/posicion"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"/>
+
+    <TextView android:id="@+id/latitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desconodido"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dp"/>
+
+    <TextView android:id="@+id/longitud"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desconodido"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dp"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/precision"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"/>
+    <TextView android:id="@+id/precision"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:text="Desconodido"/>
+
+    <TextView android:id="@+id/textProveedor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/provider"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"/>
+
+    <TextView android:id="@+id/proveedor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mapa"
+        android:text="@string/mapa"
+        android:layout_gravity="center_horizontal"
+        android:onClick="mapa" />
+    <RelativeLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="324dp"
+        android:layout_height="179dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.29"
+        >
+
+    </RelativeLayout>
+</LinearLayout>

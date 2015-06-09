@@ -67,7 +67,6 @@ public class MapsActivity extends FragmentActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
     @Override
     protected void onResume() {
         super.onResume();
@@ -118,7 +117,7 @@ public class MapsActivity extends FragmentActivity {
         latitud=Double.valueOf(loc.getLatitude());
         longitud=Double.valueOf(loc.getLongitude());
         mMap.addMarker(new MarkerOptions()
-                .position(new LatLng(latitud, longitud)).title("Yo"));
+                .position(new LatLng(latitud, longitud)).title("YO"));
         mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(18.321562, -100.701563)).title("Coyuca de Catalán"));
         mMap.addMarker(new MarkerOptions()
@@ -128,7 +127,7 @@ public class MapsActivity extends FragmentActivity {
         LatLng location = new LatLng(latitud, longitud);
         CameraPosition.Builder builder = CameraPosition.builder();
         builder.target(location);
-        builder.zoom(18);
+        builder.zoom(16);
         builder.bearing(0);
         builder.tilt(0);
         CameraPosition cameraPosition = builder.build();

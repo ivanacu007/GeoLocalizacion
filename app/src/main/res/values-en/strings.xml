@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Location</string>
+    <string name="activar">Enable</string>
+    <string name="desactivar">Disable</string>
+    <string name="m1">Satellite</string>
+    <string name="m2">Hybrid</string>
+    <string name="m3">Terrain</string>
+    <string name="m4">Normal</string>
+    <string name="mapa">Go to map</string>
+    <string name="posicion">Current position:</string>
+    <string name="precision">Accuracy</string>
+    <string name="provider">State provider</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="action_settings">Settings</string>
+    <string name="yo">Me</string>
+    <string name="prove">Provider Off</string>
+    <string name="prodi">Disable provider</string>
+    <string name="lati">Latitude</string>
+    <string name="longi">Length</string>
+    <string name="descono">Unknown</string>
+</resources>

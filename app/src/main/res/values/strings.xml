@@ -2,7 +2,7 @@
     <string name="app_name">Localizacion</string>
 
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Opciones</string>
     <string name="activar">Activar</string>
     <string name="posicion">Posición actual:</string>
     <string name="provider">Estado proveedor:</string>
@@ -14,4 +14,10 @@
     <string name="m2">Híbrido</string>
     <string name="m3">Terreno</string>
     <string name="m4">Normal</string>
+    <string name="descono">Desconocida</string>
+    <string name="prove">Proveedor Off</string>
+    <string name="yo">Yo</string>
+    <string name="lati">Latitud</string>
+    <string name="longi">Longitud</string>
+    <string name="prodi">Proveedor desactivado</string>
 </resources>

@@ -15,6 +15,8 @@ import android.widget.TextView;
 import android.content.Context;
 import android.widget.Toast;
 
+import org.xml.sax.Parser;
+
 
 public class MainActivity extends Activity implements LocationListener{
     LocationManager handle; //Gestor del servicio de localización
@@ -59,7 +61,7 @@ public class MainActivity extends Activity implements LocationListener{
             }
             else{
                 if (servicioActivo == false) {
-                    Toast.makeText(this, "Proveedor desactivado", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.prodi, Toast.LENGTH_SHORT).show();
                 }
             }
 
@@ -74,10 +76,10 @@ public class MainActivity extends Activity implements LocationListener{
         botonActivar.setText(R.string.activar);
         //Se desactivan las notificaciones
         handle.removeUpdates(this);
-        proveedor.setText("Proveedor Off");
-        longitud.setText("Desconocida");
-        latitud.setText("Desconocida");
-        precision.setText("Desconocida");
+        proveedor.setText(R.string.prove);
+        longitud.setText(R.string.descono);
+        latitud.setText(R.string.descono);
+        precision.setText(R.string.descono);
 
     }
     public void iniciarServicio(){
@@ -101,22 +103,17 @@ public class MainActivity extends Activity implements LocationListener{
     }
     public void muestraPosicionActual(Location loc){
         if(loc == null){//Si no se encuentra localización, se mostrará "Desconocida"
-            longitud.setText("Desconocida");
-            latitud.setText("Desconocida");
-            precision.setText("Desconocida");
+            longitud.setText(R.string.descono);
+            latitud.setText(R.string.descono);
+            precision.setText(R.string.descono);
 
         }else{//Si se encuentra, se mostrará la latitud y longitud
-            latitud.setText("Latitud: "+String.valueOf(loc.getLatitude()));
-            longitud.setText("Longitud: "+String.valueOf(loc.getLongitude()));
+            latitud.setText(getText(R.string.lati)+": " + String.valueOf(loc.getLatitude()));
+            longitud.setText(getText(R.string.longi)+": "+ String.valueOf(loc.getLongitude()));
             precision.setText(String.valueOf(loc.getAccuracy()));
         }
     }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
